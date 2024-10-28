@@ -1,8 +1,0 @@
-services:
-  rmf-webapp-dev:
-    container_name: rmf-webapp-dev
-    image: httpd
-    volumes:
-      - ./public/:/usr/local/apache2/htdocs/
-    ports:
-      - 8080:80
