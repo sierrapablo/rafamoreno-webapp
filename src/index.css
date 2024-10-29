@@ -1,37 +1,22 @@
+/* -------------------------------------------------------------------------
+ * GENERALES
+ * ------------------------------------------------------------------------- */
+
 body {
     background: #0e0c12;
-}
-
-.artistGallery {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 900px;
-    height: 600px;
+    align-items: center;
+    margin: 0;
 }
 
-.artistGallery-img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .2;
-    transition: .7s ease;
-    filter: contrast(50%);
+/* -------------------------------------------------------------------------
+ * PIE DE PÁGINA
+ * ------------------------------------------------------------------------- */
+ footer {
+    width: 100vw;
+    height: 100px;
+    background: #9181bc;
+    margin-top: 10%;
 }
-
-.artistGallery-img:hover {
-    width: 300px;
-    opacity: 1;
-    filter: contrast(100%);
-}
-
-.portfolio .portfolio-item .portfolio-info {
-    opacity: 0;
-    position: absolute;
-    left: 30px;
-    right: 30px;
-    bottom: 0;
-    z-index: 3;
-    transition: all ease-in-out 0.3s;
-    background: color-mix(in srgb, var(--background-color), transparent 10%);
-    padding: 15px;
-  }

@@ -1,0 +1,73 @@
+/* -------------------------------------------------------------------------
+ * PORTADA
+ * ------------------------------------------------------------------------- */
+ .portada {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.portada-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .2;
+}
+
+.portadaText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f4f2f8;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+
+.portada-titulo {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.portada-subtitulo {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 300;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; } to { opacity: 1; }
+}
+
+
+/* -------------------------------------------------------------------------
+ * GALERÍA DE ARTISTAS
+ * ------------------------------------------------------------------------- */
+.artistGallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    padding: 10%;
+}
+
+.artistGallery-img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .2;
+    transition: .7s ease;
+}
+
+.artistGallery-img:hover {
+    width: 15vw;
+    object-fit: cover;
+    opacity: 1;
+    filter: contrast(120%);
+}
