@@ -55,6 +55,7 @@
     align-items: center;
     width: 50vw;
     padding: 10%;
+    background: transparent;
 }
 
 .artistGallery-img {
@@ -70,4 +71,99 @@
     object-fit: cover;
     opacity: 1;
     filter: contrast(120%);
+}
+
+
+/* -------------------------------------------------------------------------
+ * REPRODUCTOR DE MÚSICA
+ * ------------------------------------------------------------------------- */
+.replayer {
+    width: 50vw;
+    display: flex;
+    padding: 20px;
+    background: #2b2638;
+    color: #f4f2f8;
+    border-radius: 5px;
+}
+
+.song-list {
+    width: 50%;
+    padding-right: 20px;
+    border-right: 1px solid #f4f2f8 0.2;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.current-song {
+    position: relative;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.current-image {
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover;
+    border-radius: 5px;
+    background: #0e0c12;
+}
+
+.fade {
+    animation: fade-in 2s ease-in-out;
+}
+
+
+.song-title {
+    position: absolute;
+    bottom: 2vw;
+    left: 2vw;
+    color: #f4f2f8;
+    background: transparent;
+    padding: 1vw;
+}
+
+.controls {
+    margin-right: 0.5vw;
+}
+
+.controls button {
+    background-color: #9181bc;
+    color: #f4f2f8;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.controlIcon {
+    cursor: pointer;
+}
+
+.controlIcon:hover {
+    opacity: .4;
+}
+
+.songInfo {
+    flex-grow: 1;
+}
+
+.songInfo:hover {
+    opacity: .4;
+}
+
+.songInfo-overImage {
+    cursor: default;
 }
