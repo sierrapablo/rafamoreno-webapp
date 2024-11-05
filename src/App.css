@@ -104,7 +104,7 @@
 .replayer {
     width: 50vw;
     display: flex;
-    padding: 20px;
+    padding: 10px;
     background: #2b2638;
     color: #f4f2f8;
     border-radius: 5px;
@@ -191,3 +191,44 @@
 .songInfo-overImage {
     cursor: default;
 }
+
+
+/* -------------------------------------------------------------------------
+ * CONTACTO
+ * ------------------------------------------------------------------------- */
+ .contact {
+    width: 50vw;
+    height: 400px;
+    display: flex;
+    padding: 20px;
+    gap: 2vw; /* Espacio entre las columnas */
+    background-color: #2b2638;
+    color: #f4f2f8;
+    border-radius: 5px;
+    margin-top: 150px;
+}
+
+#contactForm {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-item {
+    padding: 50px;
+}
+
+.contact-item strong {
+    margin: 0;
+}
+
+.contact-item span {
+    margin: 5px 0 0;
+}
+
