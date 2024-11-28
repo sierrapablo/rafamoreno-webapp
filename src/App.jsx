@@ -1,24 +1,11 @@
 import './App.css'
-import { ArtistGallery } from './components/ArtistGallery'
-import { ContactForm, ContactInfo } from './components/Contact'
-import { MainFrame } from './components/MainFrame'
-import { Replayer } from './components/Replayer'
+import { Hero } from './sections/Hero/Hero.jsx'
 
 function App() {
 
   return (
     <div className='App'>
-      <header></header>
-      <MainFrame/>
-      <Replayer/>
-      <ArtistGallery/>
-      <section className='contact'>
-        <ContactForm/>
-      <div className='contact-info'>
-        <ContactInfo/>
-      </div>
-      </section>
-      <footer></footer>
+      <Hero />
     </div>
   )
 }
